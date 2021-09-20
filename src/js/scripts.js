@@ -4,6 +4,8 @@
 
 window.addEventListener('DOMContentLoaded', event => {
 
+    var type=(screen.width <= 699)? true:false;
+    
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
