@@ -1,0 +1,20 @@
+// 
+// About
+// 
+
+.purple-section {
+    background-image: url("../assets/img/BACKGROUNDS.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+.img-container {
+    display:flex;
+     flex-wrap: wrap;
+    align-content: space-evenly;
+    }
+    .img-container img{
+    width:50%;
+    }

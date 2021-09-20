@@ -5,10 +5,15 @@
 .masthead {
     padding-top: calc(6rem + 74px);
     padding-bottom: 6rem;
+    background-image: url("../assets/img/BACKGROUNDS.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;    
 
     .masthead-heading {
         font-size: 2.75rem;
-        line-height: 2.75rem;
+        line-height: 2.75rem;    
     }
 
     .masthead-subheading {
@@ -16,7 +21,8 @@
     }
 
     .masthead-avatar {
-        width: 15rem;
+        //width: 15rem;
+        height: 20rem;
     }
 }
 
@@ -31,7 +37,7 @@
         }
 
         .masthead-subheading {
-            font-size: 1.5rem;
+            font-size: 1.9rem;
         }
 
     }

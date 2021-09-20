@@ -3,6 +3,13 @@
 // 
 
 .portfolio {
+
+    background-image: url("../assets/img/00_background.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+
     .portfolio-item {
         cursor: pointer;
         position: relative;

@@ -9,7 +9,7 @@
     font-weight: $headings-font-weight;
 
     .navbar-brand {
-        color: $white;
+        color: $dark-purple;
     }
 
     .navbar-nav {
@@ -17,7 +17,7 @@
 
         li.nav-item {
             a.nav-link {
-                color: $white;
+                color: $dark-purple;
 
                 &:hover {
                     color: $primary;
@@ -25,7 +25,7 @@
 
                 &:active,
                 &:focus {
-                    color: $white;
+                    color: $dark-purple;
                 }
 
                 &.active {

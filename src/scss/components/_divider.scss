@@ -40,4 +40,16 @@
             color: $white;
         }
     }
+
+    &.divider-dark {
+        .divider-custom-line {
+            background-color: $primary;
+        }
+
+        .divider-custom-icon {
+            color: $white;
+        }
+    }
+
+
 }
