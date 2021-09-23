@@ -37,7 +37,7 @@ html(lang='en')
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto
                         li.nav-item.mx-0.mx-lg-1
-                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#portfolio') Portfolio
+                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#portfolio') Solutions
                         li.nav-item.mx-0.mx-lg-1
                             a.nav-link.py-3.px-0.px-lg-3.rounded(href='#about') About
                         li.nav-item.mx-0.mx-lg-1
@@ -66,7 +66,7 @@ html(lang='en')
         section#portfolio.page-section.portfolio
             .container
                 // Portfolio Section Heading
-                h2.page-section-heading.text-center.text-uppercase.text-primary.mb-0 Portfolio
+                h2.page-section-heading.text-center.text-uppercase.text-primary.mb-0 Solutions
                 // Icon Divider
                 .divider-custom.divider-dark
                     .divider-custom-line
@@ -83,21 +83,21 @@ html(lang='en')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/submarine.png', alt='...')
+                            img.img-fluid(src='assets/img/portfolio/linktool.svg', alt='...')
                     // Portfolio Item 2
                     .col-md-6.col-lg-4.mb-5
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal2')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/safe.png', alt='...')
-                    //- // Portfolio Item 3
-                    //- .col-md-6.col-lg-4.mb-5
-                    //-     .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal3')
-                    //-         .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                    //-             .portfolio-item-caption-content.text-center.text-white
-                    //-                 i.fas.fa-plus.fa-3x
-                    //-         img.img-fluid(src='assets/img/portfolio/circus.png', alt='...')
+                            img.img-fluid(src='assets/img/portfolio/teragence2.svg', alt='...')
+                    // Portfolio Item 3
+                    .col-md-6.col-lg-4.mb-5
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal3')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='assets/img/portfolio/ecities.svg', alt='...')
 
         // About Section
         section#about.page-section.text-white.purple-section
@@ -119,24 +119,32 @@ html(lang='en')
                         p.lead
                             | You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
 
-                table.table-borderless(style='width:30%;margin: 0 auto;text-align:center;')
+
+                table.table-borderless(style='width:40%;margin: 0 auto;text-align:center;')
                     tbody
                         tr
-                            td(style='padding: 1%;') 
-                                img.img-fluid(src='assets/img/European_Commission.svg', style='width:7em;', alt='...')
-                            td(style='padding: 1%;')
-                                img.img-fluid(src='assets/img/OGC_Associate_Member_3DR_trans.png', style='width:9em;', alt='...')
+                            td(style='padding: 3%;') 
+                                img.img-fluid(src='assets/img/European_Commission.svg', style='width:300px;', alt='...')
+                            td(style='padding: 3%;')
+                                img.img-fluid(src='assets/img/OGC_Associate_Member_3DR_trans.png', style='width:500px;', alt='...')
                                 //pic: 898232514
+                            td(style='padding: 3%;')
+                                img.img-fluid(src='assets/img/ESA_logo.svg', style='width:300px;', alt='...')
                         tr 
                             td 
-                                .text-white.small Registered participant 
-                            td
+                                .text-white.small Registered participant
+                                    .p pic: 898232514
+                            td 
+                                .text-white.small 
+                            td 
+                                .text-white.small Registered SME
+                                    .p 1000031944 
  
         // Team Section
         section#team.page-section.yellow-section
             .container
                 .text-center
-                    // Portfolio Section Heading
+                    // Team Section Heading
                     h2.page-section-heading.text-center.text-uppercase.text-primary.mb-0 Meet the Team
                     // Icon Divider
                     .divider-custom

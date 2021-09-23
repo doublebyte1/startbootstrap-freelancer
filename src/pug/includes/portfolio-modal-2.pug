@@ -4,23 +4,26 @@
         .modal-content
             .modal-header.border-0
                 button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
-            .modal-body.text-center.pb-5
+            .modal-body.text-left.pb-5
                 .container
                     .row.justify-content-center
                         .col-lg-8
                             // Portfolio Modal - Title
-                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Tasty Cake
+                            h2.portfolio-modal-title.text-center.text-black.text-uppercase.mb-0 Processing Large Geospatial Datasets
                             // Icon Divider
                             .divider-custom
-                                .divider-custom-line
-                                .divider-custom-icon
-                                    i.fas.fa-star
-                                .divider-custom-line
                             // Portfolio Modal - Image
-                            img.img-fluid.rounded.mb-5(src='assets/img/portfolio/cake.png', alt='...')
-                            // Portfolio Modal - Text
+                            img.img-fluid.rounded.mb-5(src='assets/img/portfolio/teragence.svg', alt='...')
+                        .text-left
+                            // Portfolio Modal - Text                            
                             p.mb-4
-                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-                            button.btn.btn-primary(href='#!', data-bs-dismiss='modal')
-                                i.fas.fa-times.fa-fw
-                                | Close Window
+                                | Large volumes of geotagged network data, are generated everyday using sensor devices. If processed, these data could have an important impact in location assessment and network design and planning. 
+                            p.mb-4
+                                | The main goal of 
+                                a(href='https://www.teragence.com/', target="_blank") Teragence
+                                |was to identify Areas of Coverage (AoC) of telco antennas, within a large volume of noisy, point data. This brought two technological challenges: to find an algorithm that enabled us to detect the AoC, discarding the points which are not relevant; and to run this algorithm at scale, processing a large dataset, which covers the entire UK. The two challenges were tackled using a stack of FOSS. 
+                            p.mb-4                                
+                                | The resulting application was virtualised into a set of docker containers, and deployed on the AWS cloud, where the processing took place.
+                            p.mb-4  
+                                | The results of this project were presented in 
+                                a(href='https://www.youtube.com/watch?v=oITufid2D4Y', target="_blank") FOSS4GUK 2020.

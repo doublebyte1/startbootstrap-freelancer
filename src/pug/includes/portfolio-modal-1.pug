@@ -4,23 +4,32 @@
         .modal-content
             .modal-header.border-0
                 button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
-            .modal-body.text-center.pb-5
+            .modal-body.text-left.pb-5
                 .container
                     .row.justify-content-center
                         .col-lg-8
                             // Portfolio Modal - Title
-                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Log Cabin
+                            h2.portfolio-modal-title.text-center.text-black.text-uppercase.mb-0 Linking Data Geographically
                             // Icon Divider
                             .divider-custom
-                                .divider-custom-line
-                                .divider-custom-icon
-                                    i.fas.fa-star
-                                .divider-custom-line
+                                //- .divider-custom-dark
+                                //- .divider-custom-icon
+                                //-     i.fas.fa-star
+                                //- .divider-custom-line
                             // Portfolio Modal - Image
-                            img.img-fluid.rounded.mb-5(src='assets/img/portfolio/cabin.png', alt='...')
-                            // Portfolio Modal - Text
+                            img.img-fluid.rounded.mb-5(src='assets/img/portfolio/linktool.svg', alt='...')
+                        .text-left
+                            // Portfolio Modal - Text                            
                             p.mb-4
-                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-                            button.btn.btn-primary(href='#!', data-bs-dismiss='modal')
-                                i.fas.fa-times.fa-fw
-                                | Close Window
+                                | The institutional Work Package “Blue Economy” (7630, BluEco), and the embedded administrative arrangement with MARE (CON-AA 35073) assist the European Commission in creating a robust scientific knowledge base that will underpin the Blue Economy strategy and policy framework for the European Union, in close collaboration with 
+                                a(href='https://ec.europa.eu/info/departments/maritime-affairs-and-fisheries_en', target="_blank") DG MARE
+                                | and other Policy DGs.
+                            p.mb-4
+                                | Most of the data used in the report is only available at Member State level, which implies that the current regional estimates done by DG MARE are quite controversial. 
+                            p.mb-4
+                                | This work, commissioned by the
+                                a(href='https://ec.europa.eu/info/departments/joint-research-centre_en', target="_blank") JRC
+                                |,  included the development of a database that ensures a more robust disaggregation of national data to the region level, as well as an aggregation of data by port into regions (NUTS 2 and NUTS 3).
+                            //- button.btn.btn-primary(href='#!', data-bs-dismiss='modal')
+                            //-     i.fas.fa-times.fa-fw
+                            //-     | Close Window

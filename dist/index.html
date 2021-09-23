@@ -30,7 +30,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Solutions</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#team">Team</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
@@ -57,7 +57,7 @@
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-primary mb-0">Portfolio</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-primary mb-0">Solutions</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-dark"><div class="divider-custom-line"></div></div>
                 <div class="divider-custom"><div class="divider-custom-line"></div></div>
@@ -69,7 +69,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/linktool.svg" alt="..." />
                         </div>
                     </div>
                     <!-- Portfolio Item 2-->
@@ -78,7 +78,16 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/teragence2.svg" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/ecities.svg" alt="..." />
                         </div>
                     </div>
                 </div>
@@ -96,18 +105,30 @@
                     <div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
                     <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
                 </div>
-                <table class="table-borderless" style="width: 30%; margin: 0 auto; text-align: center">
+                <table class="table-borderless" style="width: 40%; margin: 0 auto; text-align: center">
                     <tbody>
                         <tr>
-                            <td style="padding: 1%"><img class="img-fluid" src="assets/img/European_Commission.svg" style="width: 7em" alt="..." /></td>
-                            <td style="padding: 1%">
-                                <img class="img-fluid" src="assets/img/OGC_Associate_Member_3DR_trans.png" style="width: 9em" alt="..." />
+                            <td style="padding: 3%"><img class="img-fluid" src="assets/img/European_Commission.svg" style="width: 300px" alt="..." /></td>
+                            <td style="padding: 3%">
+                                <img class="img-fluid" src="assets/img/OGC_Associate_Member_3DR_trans.png" style="width: 500px" alt="..." />
                                 <!--pic: 898232514-->
                             </td>
+                            <td style="padding: 3%"><img class="img-fluid" src="assets/img/ESA_logo.svg" style="width: 300px" alt="..." /></td>
                         </tr>
                         <tr>
-                            <td><div class="text-white small">Registered participant</div></td>
-                            <td></td>
+                            <td>
+                                <div class="text-white small">
+                                    Registered participant
+                                    <div class="p">pic: 898232514</div>
+                                </div>
+                            </td>
+                            <td><div class="text-white small"></div></td>
+                            <td>
+                                <div class="text-white small">
+                                    Registered SME
+                                    <div class="p">1000031944</div>
+                                </div>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -117,7 +138,7 @@
         <section class="page-section yellow-section" id="team">
             <div class="container">
                 <div class="text-center">
-                    <!-- Portfolio Section Heading-->
+                    <!-- Team Section Heading-->
                     <h2 class="page-section-heading text-center text-uppercase text-primary mb-0">Meet the Team</h2>
                     <!-- Icon Divider-->
                     <div class="divider-custom"><div class="divider-custom-line"></div></div>
@@ -266,26 +287,30 @@
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
+                    <div class="modal-body text-left pb-5">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                                    <h2 class="portfolio-modal-title text-center text-black text-uppercase mb-0">Linking Data Geographically</h2>
                                     <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
+                                    <div class="divider-custom"></div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/linktool.svg" alt="..." />
+                                </div>
+                                <div class="text-left">
+                                    <!-- Portfolio Modal - Text                            -->
+                                    <p class="mb-4">
+                                        The institutional Work Package “Blue Economy” (7630, BluEco), and the embedded administrative arrangement with MARE (CON-AA 35073) assist the European Commission in creating a robust scientific knowledge base that will underpin the Blue Economy strategy and policy framework for the European Union, in close collaboration with
+                                        <a href="https://ec.europa.eu/info/departments/maritime-affairs-and-fisheries_en" target="_blank">DG MARE</a>
+                                        and other Policy DGs.
+                                    </p>
+                                    <p class="mb-4">Most of the data used in the report is only available at Member State level, which implies that the current regional estimates done by DG MARE are quite controversial.</p>
+                                    <p class="mb-4">
+                                        This work, commissioned by the
+                                        <a href="https://ec.europa.eu/info/departments/joint-research-centre_en" target="_blank">JRC</a>
+                                        , included the development of a database that ensures a more robust disaggregation of national data to the region level, as well as an aggregation of data by port into regions (NUTS 2 and NUTS 3).
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -298,26 +323,30 @@
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
+                    <div class="modal-body text-left pb-5">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
+                                    <h2 class="portfolio-modal-title text-center text-black text-uppercase mb-0">Processing Large Geospatial Datasets</h2>
                                     <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
+                                    <div class="divider-custom"></div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/teragence.svg" alt="..." />
+                                </div>
+                                <div class="text-left">
+                                    <!-- Portfolio Modal - Text                            -->
+                                    <p class="mb-4">Large volumes of geotagged network data, are generated everyday using sensor devices. If processed, these data could have an important impact in location assessment and network design and planning.</p>
+                                    <p class="mb-4">
+                                        The main goal of
+                                        <a href="https://www.teragence.com/" target="_blank">Teragence</a>
+                                        was to identify Areas of Coverage (AoC) of telco antennas, within a large volume of noisy, point data. This brought two technological challenges: to find an algorithm that enabled us to detect the AoC, discarding the points which are not relevant; and to run this algorithm at scale, processing a large dataset, which covers the entire UK. The two challenges were tackled using a stack of FOSS.
+                                    </p>
+                                    <p class="mb-4">The resulting application was virtualised into a set of docker containers, and deployed on the AWS cloud, where the processing took place.</p>
+                                    <p class="mb-4">
+                                        The results of this project were presented in
+                                        <a href="https://www.youtube.com/watch?v=oITufid2D4Y" target="_blank">FOSS4GUK 2020.</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -330,26 +359,28 @@
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
+                    <div class="modal-body text-left pb-5">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
+                                    <h2 class="portfolio-modal-title text-center text-black text-uppercase mb-0">Mapping the cities through the senses of those who make them</h2>
                                     <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
+                                    <div class="divider-custom"></div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/ecities.svg" alt="..." />
+                                </div>
+                                <div class="text-left">
+                                    <!-- Portfolio Modal - Text                            -->
+                                    <p class="mb-4">Understanding the interaction between people and urban spaces is key to finding ways to enhance citizens' health. In particular, the signals generated in our neurobiological architecture, which controls our emotions and decisions, during this interaction may provide invaluable insights.</p>
+                                    <p class="mb-4">
+                                        The
+                                        <a href="https://emotionalcities-h2020.eu/" target="_blank">eMOTIONAL Cities</a>
+                                        project - funded under the H2020-EU Programme, with
+                                        <a href="https://cordis.europa.eu/project/id/945307" target="_blank">grant agreement 945307</a>
+                                        - will characterise the urban health challenges and inequalities. Its work will lead to innovative eMOTIONAL city mapping that will be produced from spatial analysis on social and health data and neuroscience experiments. To do this, the project will draw on urban planning and design, neuroscience, and data science and technology.
+                                    </p>
+                                    <p class="mb-4">The spatial data infrastructure (SDI) developed in WP3 - led by Yellow Bricks - will establish an ecosystem of open-standards for hardware, software and cloud infrastructure that will be positioned to become a reference for subsequent research on the future of cities, neuroscience and beyond.</p>
                                 </div>
                             </div>
                         </div>
