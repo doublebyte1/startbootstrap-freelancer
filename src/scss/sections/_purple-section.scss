@@ -8,7 +8,18 @@
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
+    a:link {
+        color: rgb(228, 222, 189);
+      }
+      
+      /* visited link */
+      a:visited {
+        color: rgb(228, 209, 39);
+      }
+
 }
+
+
 
 .img-container {
     display:flex;

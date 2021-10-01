@@ -11587,6 +11587,13 @@ html {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+  /* visited link */
+}
+.purple-section a:link {
+  color: #e4debd;
+}
+.purple-section a:visited {
+  color: #e4d127;
 }
 
 .img-container {
