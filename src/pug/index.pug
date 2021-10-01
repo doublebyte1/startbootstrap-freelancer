@@ -203,130 +203,102 @@ html(lang='en')
         // Contact Section
         section#contact.page-section.purple-section
             .container
-                .text-center
-                    h2.section-heading.text-uppercase Contact Me
-                    h3.section-subheading.text-muted Estar&eacute; encantada de poder hablar contigo!
-                form#contactForm(name='sentMessage', novalidate='novalidate')
-                    .row.align-items-stretch.mb-5
-                        .col-md-6
-                            .form-group
-                                input#name.form-control(type='text', placeholder='Tu nombre *', required='required', data-validation-required-message='Por favor escribe tu nombre.')
-                                p.help-block.text-danger
-                            .form-group
-                                input#email.form-control(type='email', placeholder='Tu email *', required='required', data-validation-required-message='Por favor escribe tu email.')
-                                p.help-block.text-danger
-                            .form-group.mb-md-0
-                                input#phone.form-control(type='tel', placeholder='Tu teléfono *', required='required', data-validation-required-message='Por favor esribe tu teléfono.')
-                                p.help-block.text-danger
-                        .col-md-6
-                            .form-group.form-group-textarea.mb-md-0
-                                textarea#message.form-control(placeholder='Tu mensaje *', required='required', data-validation-required-message='Please enter a message.')
-                                p.help-block.text-danger
-                    .text-center
-                            #success
-                            button#sendMessageButton.btn.btn-primary.btn-xl.text-uppercase(type='submit') Enviar Mensaje
+                // Contact Section Heading
+                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Contact Us
+                br
+                p.page-section-subheading.text-center.text-secondary.mb-0 Have a question about our services, pricing, training or anything else?
+                //- 
+                //- Fill out the form below.
+                // Icon Divider
+                .divider-custom
+                    .divider-custom-line
+                    //- .divider-custom-icon
+                    //-     i.fas.fa-laptop-code
+                    //- .divider-custom-line
+                // Contact Section Form
+                .row.justify-content-center
+                    .col-lg-8.col-xl-7
+
+                        // * * * * * * * * * * * * * * *
+                        // * * SB Forms Contact Form * *
+                        // * * * * * * * * * * * * * * *
+
+                        // This form is pre-integrated with SB Forms.
+                        // To make this form functional, sign up at
+                        // https://startbootstrap.com/solution/contact-forms
+                        // to get an API token!
+
+                        form#contactForm(data-sb-form-api-token='API_TOKEN')
+
+                            // Name input
+                            .form-floating.mb-3
+                                input#name.form-control(
+                                    type='text',
+                                    placeholder='Enter your name...',
+                                    data-sb-validations='required'
+                                )
+                                label(for='name') Full name
+                                .invalid-feedback(data-sb-feedback='name:required')
+                                    | A name is required.
+
+                            // Email address input
+                            .form-floating.mb-3
+                                input#email.form-control(
+                                    type='email',
+                                    placeholder='name@example.com',
+                                    data-sb-validations='required,email'
+                                )
+                                label(for='email') Email address
+                                .invalid-feedback(data-sb-feedback='email:required')
+                                    | An email is required.
+                                .invalid-feedback(data-sb-feedback='email:email')
+                                    | Email is not valid.
+
+                            // Phone number input
+                            .form-floating.mb-3
+                                input#phone.form-control(
+                                    type='tel',
+                                    placeholder='(123) 456-7890',
+                                    data-sb-validations='required'
+                                )
+                                label(for='phone') Phone number
+                                .invalid-feedback(data-sb-feedback='phone:required')
+                                    | A phone number is required.
+
+                            // Message input
+                            .form-floating.mb-3
+                                textarea#message.form-control(
+                                    type='text',
+                                    placeholder='Enter your message here...',
+                                    style='height: 10rem;',
+                                    data-sb-validations='required'
+                                )
+                                label(for='message') Message
+                                .invalid-feedback(data-sb-feedback='message:required')
+                                    | A message is required.
+
+                            // Submit success message
+                            //
+                            // This is what your users will see when the form
+                            // has successfully submitted
+
+                            #submitSuccessMessage.d-none
+                                .text-center.mb-3
+                                    .fw-bolder Form submission successful!
+  
+                            // Submit error message
+                            //
+                            // This is what your users will see when there is
+                            // an error submitting the form
+
+                            #submitErrorMessage.d-none
+                                .text-center.text-danger.mb-3 Error sending message!
+
+                            // Submit Button
+                            button#submitButton.btn.btn-secondary.btn-xl.disabled(type='submit') Send
 
 
 
-
-        //- section#contact.page-section.purple-section
-        //-     .container
-        //-         // Contact Section Heading
-        //-         h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Contact Us
-        //-         br
-        //-         p.page-section-subheading.text-center.text-secondary.mb-0 Have a question about our services, pricing, training or anything else?
-        //-         //- 
-        //-         //- Fill out the form below.
-        //-         // Icon Divider
-        //-         .divider-custom
-        //-             .divider-custom-line
-        //-             //- .divider-custom-icon
-        //-             //-     i.fas.fa-laptop-code
-        //-             //- .divider-custom-line
-        //-         // Contact Section Form
-        //-         .row.justify-content-center
-        //-             .col-lg-8.col-xl-7
-
-        //-                 // * * * * * * * * * * * * * * *
-        //-                 // * * SB Forms Contact Form * *
-        //-                 // * * * * * * * * * * * * * * *
-
-        //-                 // This form is pre-integrated with SB Forms.
-        //-                 // To make this form functional, sign up at
-        //-                 // https://startbootstrap.com/solution/contact-forms
-        //-                 // to get an API token!
-
-        //-                 form#contactForm(data-sb-form-api-token='API_TOKEN')
-
-        //-                     // Name input
-        //-                     .form-floating.mb-3
-        //-                         input#name.form-control(
-        //-                             type='text',
-        //-                             placeholder='Enter your name...',
-        //-                             data-sb-validations='required'
-        //-                         )
-        //-                         label(for='name') Full name
-        //-                         .invalid-feedback(data-sb-feedback='name:required')
-        //-                             | A name is required.
-
-        //-                     // Email address input
-        //-                     .form-floating.mb-3
-        //-                         input#email.form-control(
-        //-                             type='email',
-        //-                             placeholder='name@example.com',
-        //-                             data-sb-validations='required,email'
-        //-                         )
-        //-                         label(for='email') Email address
-        //-                         .invalid-feedback(data-sb-feedback='email:required')
-        //-                             | An email is required.
-        //-                         .invalid-feedback(data-sb-feedback='email:email')
-        //-                             | Email is not valid.
-
-        //-                     // Phone number input
-        //-                     .form-floating.mb-3
-        //-                         input#phone.form-control(
-        //-                             type='tel',
-        //-                             placeholder='(123) 456-7890',
-        //-                             data-sb-validations='required'
-        //-                         )
-        //-                         label(for='phone') Phone number
-        //-                         .invalid-feedback(data-sb-feedback='phone:required')
-        //-                             | A phone number is required.
-
-        //-                     // Message input
-        //-                     .form-floating.mb-3
-        //-                         textarea#message.form-control(
-        //-                             type='text',
-        //-                             placeholder='Enter your message here...',
-        //-                             style='height: 10rem;',
-        //-                             data-sb-validations='required'
-        //-                         )
-        //-                         label(for='message') Message
-        //-                         .invalid-feedback(data-sb-feedback='message:required')
-        //-                             | A message is required.
-
-        //-                     // Submit success message
-        //-                     //
-        //-                     // This is what your users will see when the form
-        //-                     // has successfully submitted
-
-        //-                     #submitSuccessMessage.d-none
-        //-                         .text-center.mb-3
-        //-                             .fw-bolder Form submission successful!
-        //-                             | To activate this form, sign up at
-        //-                             br
-        //-                             a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
-
-        //-                     // Submit error message
-        //-                     //
-        //-                     // This is what your users will see when there is
-        //-                     // an error submitting the form
-
-        //-                     #submitErrorMessage.d-none
-        //-                         .text-center.text-danger.mb-3 Error sending message!
-
-        //-                     // Submit Button
-        //-                     button#submitButton.btn.btn-secondary.btn-xl.disabled(type='submit') Send
 
         // Footer
         footer.footer.text-center
