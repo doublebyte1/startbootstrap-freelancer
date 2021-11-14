@@ -3,11 +3,23 @@
 // 
 
 .yellow-section {
+    color: $secondary;
     background-image: url("../assets/img/00_background.png");
+    //background-color: #cda343;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
+
+    a:link {
+        color: $light-purple;
+      }
+      
+      /* visited link */
+      a:visited {
+        color: rgb(39, 39, 36);
+      }
+
 }
 
 

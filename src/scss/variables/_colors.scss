@@ -4,16 +4,22 @@
 
 //- Override and add to color system
 $teal: #1abc9c;
+$dark-yellow: #cda343;
 $dark-blue: #2c3e50;
 $test: hsl(120, 61%, 44%);
 $brick: #e3cc49;
-$dark-purple: #412e70;
+$dark-purple: #4d317d;
 $light-purple: #822d7f;
+$purple: #83337c;
 
 
 //- Override primary color
-$primary: $light-purple;
-$secondary: $brick;
+//$primary: $light-purple;
+//$secondary: $brick;
+
+$primary: $dark-yellow;
+$secondary: $dark-purple;
+//$secondary: $brick;
 
 // The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
 // See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast

@@ -3,8 +3,9 @@
 // 
 
 .portfolio {
-
-    background-image: url("../assets/img/00_background.png");
+    font-family: myFirstFont;
+    background-image: url("../assets/img/BACKGROUNDS.png");
+    //background-image: url("../assets/img/00_background.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -40,16 +41,19 @@
 // Styling for the portfolio modals
 .portfolio-modal {
     .btn-close {
+        font-family: myFirstFont;
         color: $primary;
         font-size: 2rem;
         padding: 1rem;
     }
 
     .portfolio-modal-title {
+        font-family: myFirstFont;
         font-size: 1.2rem;
         line-height: 1rem;
 
         @include media-breakpoint-up(lg) {
+            font-family: myFirstFont;
             font-size: 3rem;
             line-height: 2.5rem;
         }

@@ -2,14 +2,25 @@
 // Navbar
 // 
 
+
+
 #mainNav {
+
+    // background-image: url("../assets/img/BACKGROUNDS.png");
+    // background-repeat: no-repeat;
+    // background-attachment: scroll;
+    // background-position: center center;
+    // background-size: cover;
+
     padding-top: 1rem;
     padding-bottom: 1rem;
-    font-family: $headings-font-family;
+    //font-family: $headings-font-family;
+    font-family: myFirstFont;
     font-weight: $headings-font-weight;
 
     .navbar-brand {
-        color: $dark-purple;
+//        color: $dark-purple;
+          color: $primary;
     }
 
     .navbar-nav {
@@ -17,19 +28,19 @@
 
         li.nav-item {
             a.nav-link {
-                color: $dark-purple;
+                color: $dark-yellow;
 
                 &:hover {
-                    color: $primary;
+                    color: $light-purple;
                 }
 
                 &:active,
                 &:focus {
-                    color: $dark-purple;
+                    color: $dark-yellow;
                 }
 
                 &.active {
-                    color: $primary;
+                    color: $light-purple;
                 }
             }
         }

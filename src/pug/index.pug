@@ -11,7 +11,7 @@ html(lang='en')
         title Byte Road - Connecting Data
 
         // Favicon
-        link(rel='icon', type='image/x-icon', href='assets/favicon1.ico')
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
 
         // Font Awesome icons (free version)
         script(src='https://use.fontawesome.com/releases/v5.15.3/js/all.js', crossorigin='anonymous')
@@ -29,8 +29,8 @@ html(lang='en')
         nav#mainNav.navbar.navbar-expand-lg.bg-secondary.text-uppercase.fixed-top
             .container
                 a.navbar-brand(href='#page-top')
-                    img(src='assets/01_ICON.svg', style='width:5%;')
-                    | Byte Road
+                    img(src='assets/img/01_ICON.svg', style='width:10%;')
+                    //- | Byte Road
                 button.navbar-toggler.text-uppercase.font-weight-bold.bg-primary.text-white.rounded(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu 
                     i.fas.fa-bars
@@ -46,32 +46,29 @@ html(lang='en')
                             a.nav-link.py-3.px-0.px-lg-3.rounded(href='#contact') Contact
 
         // Masthead
-        header.masthead.bg-primary.text-white.text-center
+        header.masthead.bg-primary.text-center
             .container.d-flex.align-items-center.flex-column
                 // Masthead Avatar Image
-                img.masthead-avatar.mb-5(src='assets/img/00_ICON.svg', alt='...')
-                // Masthead Heading
-                //h1.masthead-heading.text-uppercase.mb-0 Paving the way to the data road
-                // Icon Divider
-                //- .divider-custom.divider-light
-                //-     .divider-custom-line
-                //-     .divider-custom-icon
-                //-         i.fas.fa-star
-                //-     .divider-custom-line
+                img.masthead-avatar.mb-5(src='assets/img/byteroad2.svg', alt='...')
                 // Masthead Subheading
                 .typewriter
                     //p.masthead-subheading.font-weight-light.mb-0 Paving the way to the data road.
-                    h1.page-section-heading.text-center.text-white Connecting Data.
+                    h1.page-section-heading.text-center Connecting Data.
+                p.
+                p.
+                p.
+
         // Portfolio Section
         section#portfolio.page-section.portfolio
             .container
                 // Portfolio Section Heading
+                //h2.page-section-heading.text-center.text-uppercase.text-primary.mb-0 Solutions
                 h2.page-section-heading.text-center.text-uppercase.text-primary.mb-0 Solutions
                 // Icon Divider
                 .divider-custom.divider-dark
                     .divider-custom-line
-                .divider-custom
-                    .divider-custom-line
+                //- .divider-custom
+                //-     .divider-custom-line
                     //- .divider-custom-icon
                     //-     i.fas.fa-laptop-code
                     //- .divider-custom-line
@@ -100,12 +97,12 @@ html(lang='en')
                             img.img-fluid(src='assets/img/portfolio/ecities.svg', alt='...')
 
         // About Section
-        section#about.page-section.text-white.purple-section
+        section#about.page-section.text-secondary.yellow-section
             .container            
                 // About Section Heading
-                h2.page-section-heading.text-center.text-uppercase.text-white About
+                h2.page-section-heading.text-center.text-uppercase.text-secondary About
                 // Icon Divider
-                .divider-custom.divider-light
+                .divider-custom.divider-custom-icon
                     .divider-custom-line
                     //- .divider-custom-icon
                     //-     i.fas.fa-laptop-code
@@ -140,22 +137,22 @@ html(lang='en')
                                 img.img-fluid(src='assets/img/ESA_logo.svg', style='width:300px;', alt='...')
                         tr 
                             td 
-                                .text-white.small Registered participant
+                                .text-secondary.small Registered participant
                                     .p pic: 898232514
                             td 
-                                .text-white.small 
+                                .text-secondary.small 
                             td 
-                                .text-white.small Registered SME
+                                .text-secondary.small Registered SME
                                     .p 1000031944 
  
         // Team Section
-        section#team.page-section.yellow-section
+        section#team.page-section.purple-section
             .container
                 .text-center
                     // Team Section Heading
                     h2.page-section-heading.text-center.text-uppercase.text-primary.mb-0 Meet the Team
                     // Icon Divider
-                    .divider-custom
+                    .divider-custom.divider-dark
                         .divider-custom-line
                         //- .divider-custom-icon
                         //-     i.fas.fa-laptop-code
@@ -164,8 +161,8 @@ html(lang='en')
                     .col-lg-4
                         .team-member
                             img.mx-auto.rounded-circle(src='assets/img/team/antonio.jpg', alt='')
-                            h4 Antonio Cerciello
-                            p.text-muted Data Engineer
+                            h4.text-primary Antonio Cerciello
+                            p.text-primary Data Engineer
                             a.btn.btn-dark.btn-social.mx-2(href='https://twitter.com/PascalLike', target='_blank')
                                 i.fab.fa-twitter
                             a.btn.btn-dark.btn-social.mx-2(href='https://www.linkedin.com/in/antoniocerciello/', target='_blank')
@@ -175,8 +172,8 @@ html(lang='en')
                     .col-lg-4
                         .team-member
                             img.mx-auto.rounded-circle(src='assets/img/team/jo_codeops_crop.jpg', alt='')
-                            h4 Joana Simoes
-                            p.text-muted Founder
+                            h4.text-primary Joana Simoes
+                            p.text-primary Founder
                             a.btn.btn-dark.btn-social.mx-2(href='https://twitter.com/doublebyte', target='_blank')
                                 i.fab.fa-twitter
                             a.btn.btn-dark.btn-social.mx-2(href='https://www.linkedin.com/in/joanasimoes/', target='_blank')
@@ -192,8 +189,8 @@ html(lang='en')
                     .col-lg-4
                         .team-member
                             img.mx-auto.rounded-circle(src='assets/img/team/fpeleja2021.jpeg', alt='')
-                            h4 Filipa Peleja
-                            p.text-muted Data Scientist
+                            h4.text-primary Filipa Peleja
+                            p.text-primary Data Scientist
                             a.btn.btn-dark.btn-social.mx-2(href='https://twitter.com/filipapeleja', target='_blank')
                                 i.fab.fa-twitter
                             a.btn.btn-dark.btn-social.mx-2(href='https://www.linkedin.com/in/peleja/', target='_blank')
@@ -205,7 +202,7 @@ html(lang='en')
 
 
         // Contact Section
-        section#contact.page-section.purple-section
+        section#contact.page-section.yellow-section
             .container
                 // Contact Section Heading
                 h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Contact Us
@@ -344,7 +341,7 @@ html(lang='en')
                     .col-lg-4
                         h4.text-uppercase.mb-4 About Byte Road
                         p.lead.mb-0
-                            | Byte Road Lda is a
+                            | ByteRoad, Sociedade Unipessoal Lda is a
                             //- a(href='https://eportugal.gov.pt/RegistoOnline/Services/CertidaoPermanente/consultaCertidao.aspx?id=0755-3588-6651')
                             | registered company 
                             |, with VAT: PT515516937. 
@@ -352,9 +349,17 @@ html(lang='en')
                             //- | .
 
         // Copyright Section
-        div.copyright.py-4.text-center.text-white
+        div.copyright.py-4.text-center.text-primary
             .container
-                small Copyright &copy; Byte Road Lda 2021
+                .row.align-items-center
+                    .col-lg-4.text-lg-start
+                        | Copyright &copy; ByteRoad, Sociedade Unipessoal Lda 2021
+                    .col-lg-4.text-lg-end
+                        a.link-light.text-primary.text-decoration-none.me-3(data-bs-toggle='modal', data-bs-target='#privacyModal') Privacy Policy
+                    //-     a.link-dark.text-decoration-none(href='#!') Terms of Use
+
+
+                //- small Copyright &copy; ByteRoad, Sociedade Unipessoal Lda 2021
 
         // Portfolio Modals
         include includes/portfolio-modal-1.pug
@@ -363,6 +368,7 @@ html(lang='en')
         include includes/portfolio-modal-4.pug
         include includes/portfolio-modal-5.pug
         include includes/portfolio-modal-6.pug
+        include includes/privacy-modal.pug
 
         // Bootstrap core JS
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js')

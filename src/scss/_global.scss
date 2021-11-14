@@ -7,6 +7,11 @@
 // 
 // https://caniuse.com/?search=scroll-padding
 
+@font-face {
+    font-family: myFirstFont;
+    src: url(../assets/Insaniburger-0OZ9.ttf);
+}
+
 html {
     height: 100%;
     scroll-padding-top: calc(#{$navbar-height} - 1px);
@@ -21,6 +26,10 @@ html {
     .page-section-heading {
         font-size: 2.25rem;
         line-height: 2rem;
+        font-family: myFirstFont;
+        
+
+
     }
 
     @include media-breakpoint-up(lg) {
