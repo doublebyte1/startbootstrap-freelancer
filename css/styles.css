@@ -123,7 +123,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   overflow: visible;
   color: white;
   text-shadow: -3px -3px #473076;
-  width: 120%;
+  width: 80%;
 }
 
 .byteroad_h3 {
@@ -142,14 +142,13 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 .team-member {
   text-align: justify;
   text-align-last: center;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   padding: 0.5rem;
 }
 
 .team-member p{
   text-align: justify;
   text-align-last: center;
-  font-size: 0.8rem;
   padding-left: 5rem;
   padding-right: 5rem;
 }
@@ -162,7 +161,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 .solution-item {
   text-align: justify;
   text-align-last: left;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   padding-left: 1rem;
   padding: 0.5rem;
 }
@@ -177,7 +176,6 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 .solution-item p{
   text-align: justify;
   text-align-last: left;
-  font-size: 0.8rem;
   padding-right: 4rem;
 }
 
